@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: poppins;
+}
+
+body {
+  min-width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+}
+
+.card .hroizontal span {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  line-height: 0px;
+  font-size: 1.1px;
+  background-color: #039eff9e;
+  margin-top: calc(30px * var(--i));
+  text-align: end;
+}
+
+.card .vartical span {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  line-height: 0px;
+  font-size: 1.1px;
+  background-color: #039eff9e;
+  margin-left: calc(30px * var(--i));
+}
+
+.card svg .one {
+  fill: #000000;
+}
+
+.card svg .two {
+  fill: white;
+  -webkit-animation: vibrate-1 .5s linear infinite both;
+          animation: vibrate-1 .5s linear infinite both;
+}
+
+@-webkit-keyframes vibrate-1 {
+  100%,
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-0.1px, 0.1px);
+            transform: translate(-0.1px, 0.1px);
+  }
+  40% {
+    -webkit-transform: translate(-0.1px, -0.1px);
+            transform: translate(-0.1px, -0.1px);
+  }
+  60% {
+    -webkit-transform: translate(0.1px, 0.1px);
+            transform: translate(0.1px, 0.1px);
+  }
+  80% {
+    -webkit-transform: translate(0.1px, -0.1px);
+            transform: translate(0.1px, -0.1px);
+  }
+}
+
+@keyframes vibrate-1 {
+  100%,
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-0.1px, 0.1px);
+            transform: translate(-0.1px, 0.1px);
+  }
+  40% {
+    -webkit-transform: translate(-0.1px, -0.1px);
+            transform: translate(-0.1px, -0.1px);
+  }
+  60% {
+    -webkit-transform: translate(0.1px, 0.1px);
+            transform: translate(0.1px, 0.1px);
+  }
+  80% {
+    -webkit-transform: translate(0.1px, -0.1px);
+            transform: translate(0.1px, -0.1px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
